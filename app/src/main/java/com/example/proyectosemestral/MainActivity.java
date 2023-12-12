@@ -383,10 +383,10 @@ public class MainActivity extends AppCompatActivity {
                     TvNumciclos.setText(String.valueOf(ciclosRestantes));
                     TvTiempo.setText(tiempo);
                     TvTiempo2.setText(tiempo2);
-                    TiempoInicial=minutoSeleccionado*60*100;
-                    TiempoEnMilisegundos=minutoSeleccionado*60*100;
-                    TiempoInicialDescanso=minutoSeleccionadoDescanso*60*100;
-                    TiempoDescansoEnMilisegundos=minutoSeleccionadoDescanso*60*100;
+                    TiempoInicial=minutoSeleccionado*60*1000;
+                    TiempoEnMilisegundos=minutoSeleccionado*60*1000;
+                    TiempoInicialDescanso=minutoSeleccionadoDescanso*60*1000;
+                    TiempoDescansoEnMilisegundos=minutoSeleccionadoDescanso*60*1000;
                     PBTiempo.setProgress(0);
                     cicloCentinela=Integer.parseInt(EtNumciclos.getText().toString());
 
@@ -462,12 +462,6 @@ public class MainActivity extends AppCompatActivity {
 
         mediaPlayer.start();
     }
-
-
-
-
-
-
 
 
 
